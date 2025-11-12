@@ -34,7 +34,7 @@ module.exports.updateUser = async (req,res) => {
                     name: req.body.name,
                     picture: req.body.picture,
                     bio: req.body.bio,
-                    gender: req.body.gender
+                    languages: req.body.languages
                     
                 }
             },
