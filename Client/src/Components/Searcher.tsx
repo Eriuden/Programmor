@@ -21,7 +21,7 @@ export const Searcher = () => {
 
         const result = users.filter((user: any)=> user.name.toLowerCase()
         .includes(search.toLowerCase()) 
-        || user.gender.toLowerCase().includes(search.toLowerCase())
+        || user.language.toLowerCase().includes(search.toLowerCase())
         )
 
         setSearch(result)
