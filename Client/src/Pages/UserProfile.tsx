@@ -9,7 +9,7 @@ export const UserProfile = (userProps:any) => {
     const dispatch = useDispatch
 
     const [name, setName] = useState(userData.name)
-    const [gender, setGender] = useState(userData.gender)
+    const [language, setLanguage] = useState(userData.language)
     const [address, setAddress] = useState(userData.adress)
     const [updateForm, setUpdateForm] = useState(false)
   
@@ -20,7 +20,7 @@ export const UserProfile = (userProps:any) => {
     return (
       <div>
         <h1>Profil de {userData.name}</h1>
-        <h3>De genre {userData.gender}</h3>
+        <h3>qui code en {userData.language}</h3>
         <h3>{userData.address}</h3>
   
         {updateForm === false && (
@@ -31,7 +31,7 @@ export const UserProfile = (userProps:any) => {
   
         {updateForm && (
           <>
-            <input type="text" defaultValue={gender} onChange={(e)=> setGender
+            <input type="text" defaultValue={language} onChange={(e)=> setLanguage
             (e.target.value)}/>
             <input type="text" defaultValue={name} onChange={(e)=> setName
             (e.target.value)}/>
